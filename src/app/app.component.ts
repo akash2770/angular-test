@@ -7,7 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  defaultOptionSecret = "pet";
+  genders = ['male', 'female'];
+  
   @ViewChild('f', { static:false }) signupForm:NgForm;
 
   suggestUserName() {
